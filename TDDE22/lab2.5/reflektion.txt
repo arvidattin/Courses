@@ -1,0 +1,12 @@
+toss() - skickar bara in element på första lediga plats, vilket gör att man behöver iterera genom hela arrayen i värsta fall. dvs 
+med tidskomplexitet O(n) om elementen är random. Det går med andra ord inte veta vart ett random element finns i arrayen utan att iterera genom. 
+Fördelen är att insättningen går snabbt då vi inte behöver följa några speciella villkor. 
+
+När kan toss() vara en fördel?
+Det vi skulle kunna tänka oss är om inData är liten och statisk. Det antagandet gör vi på att vi inte behöver implementera en extra funktion för att sortera arrayen i en sekvens. 
+Och även fallet då elementen inte är "random" valda utan följer en sekvens från början. 
+insert() är bättre i alla andra fall.
+
+insert() - Eftersom att varje nytt element sätts in längst bak i arrayen så behöver vi endast jämföra detta element med nuvarande "parent" och swappa ifall vi behöver.
+Det blir alltså endast ett element i taget som vi jämför med och tidskomplexiteten blir då O(log(n)) när vi Heapify:ar. 
+

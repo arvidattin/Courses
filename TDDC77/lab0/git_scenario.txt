@@ -1,0 +1,32 @@
+// Student 1 (Arvid)
+mkdir TDDC77
+cd TDDC77
+mkdir Laborationer
+cd Laborationer
+pwd
+git clone https://gitlab.liu.se/tddc77material/lab0.git
+// la till namn //
+// Skapade repo //
+git remote rename origin upstream
+git remote add origin https://gitlab.liu.se/tddc77lab/2021/martin/arvat549-danan623-rasbr274/laborations
+git add .
+git commit -m "Första namn"
+git push origin master
+
+// Student 2 (Rasmus)
+mkdir TDDC77
+cd TDDC77
+git clone https://gitlab.liu.se/tddc77lab/2021/martin/arvat549-danan623-rasbr274/laborations.git
+// la till namn //
+git add .
+git commit -m "Andra namn"
+git push origin master
+
+// Student 3 (Daniel Andersson)
+mkdir TDDC77
+cd TDDC77
+git clone https://gitlab.liu.se/tddc77lab/2021/martin/arvat549-danan623-rasbr274/laborations.git
+// la till namn //
+git add .
+git commit -m "Tredje namn"
+git push origin master

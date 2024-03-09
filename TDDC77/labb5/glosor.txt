@@ -1,0 +1,7 @@
+Hej=Hello
+Bil=Car
+Dam=Lady
+Pojke=Boy
+Svensk=Swedish
+Cykel=Bicycle
+Hus=House

@@ -1,0 +1,7 @@
+==2022-10-19==
+Bra jobbat!
+
+Lite onödigt att behålla wordAt i WordList, då ni aldrig använder den, och ni har egentligen inte index längre då ni använder er HashSet.
+
+Bara något att fundera på:
+Nu har ni ett HashSet för list och used, hade det gått att kombinera dessa för att minimera minnesåtgången? Skulle körtiden påverkas, hur och varför, i sådant fall?

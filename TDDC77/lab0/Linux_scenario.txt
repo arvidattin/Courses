@@ -1,0 +1,20 @@
+cd
+mkdir codebase
+cd codebase
+date > date.txt
+nano
+Name: Daniel
+Family name: Andersson
+Name2: Rasmus
+Family name2: Broman
+Name3: Arvid
+Family name3: Attin
+ctrl x
+Y
+cd
+mkdir codebase_v2
+cd ../codebase
+pwd
+cp * /home/danan623/codebase_v2
+cd
+rm codebase -r

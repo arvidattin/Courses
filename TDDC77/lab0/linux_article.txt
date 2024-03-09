@@ -1,0 +1,113 @@
+pwd
+Står för "Print working directory" och lätt förklarat berättar kommandot vart man står just nu i "navigeringen"
+
+cd
+Står för "Change directory" och betyder att man bytar katalog att jobba i.
+
+cd /
+Gör att man kommer tillbaka till ursprungskatalogen.
+
+cd home
+Gör att man kommer till katalogen efter ursprungskatalogen.
+
+cd ..
+Gör att man går tillbaka ett steg till katalogen innan.
+
+cd ../..
+Gör att man går tillbaka fler steg, i detta fall två.
+
+whoami
+Berättar vem man är (användarnamn).
+
+cd /home/USERNAME/Desktop
+Används för specifikt komma till en katalog
+
+cd ~
+~ menas med att man utgår från sin hemkatalog
+
+cd ~/
+menas med att man utgår i sin hemkatalog och för att därefter ange vilken vilken katalogen
+
+mkdir tmp
+"Makedirectory", skapar en ny directory/mapp som heter tmp
+
+mkdir /tmp/Lab0
+Skapar en directory som heter Lab0 genom absolut path, i directory tmp
+
+ls
+listar alla filer eller directorys där man är i datorn (pwd)
+
+mkdir dir4 dir5 dir6
+skapar 3 mappar i samma directory
+
+mkdir -p dir4/dir5/dir6
+skapar en map (dir4) i den directory man är i just nu. dir5 skapas i dir4, dir6 skapas i dir5.
+
+-p
+kallas option eller switch. Vilket som i föregående fall kan användas för att skapa flera directorys efter varandra.
+
+[output] > [filename].txt
+gör så att man kan skriva information från en output in i en textfil istället för att det skrivs ut i terminal.
+ex. date > date.txt , ls > info.txt ... Kommandot skapar även filen.
+
+cat [filename].txt
+Gör så att vi kan kolla på outputen som lagrats i filen.
+
+echo
+skriver ut argumentet igen. Bra om man vill testa om outputen verkligen har lagrats i filen.
+
+cat t*
+visar alla filer som startar med t
+
+less [filename]
+Gör så att man kan läsa filen, använd uppåtpil och nedåtpil för att läsa genom info som är lagrad i filen.
+
+ mv
+ "move" kommando. gör så att man kan flytta filer.
+
+ mv [current directory]/[Filename] /[nextdirectory]/[next..]/[lastdirectory]
+Flyttar en fil i nuvarande directory till ett annat directory i systemet.
+
+cp
+kopierar filer
+
+cp [directory]/[nextdirectory]/[lastdirectory]/[Filename] .
+kopierar en fil till vald directorys
+
+cp [filename] [NewFilename_01]
+Skapar en kopia av filen med ett annat namn
+
+mv [NewFilename_01] [NewFilename_02]
+Om man vill byta namn på backup/kopierade filen.
+
+rm
+"remove file". Tar bort filer
+
+rmdir
+tar bort directorys (som är tomma)
+
+rm -r [filename] eller [directory]
+tar bort allt utan att bry sig om där finns filer eller andra mappar lagrade
+
+wc
+word count. Räknar ord i en fil
+
+wc -l
+på samma sätt, men räknar rader av text
+
+[output] | [input]
+"pipe = |" - kopplar ihop ett kommando:s output med ett annat kommando:s input
+Ex. ls ~ | wc -l
+listar info (ls) och räknar alla rader (wc -l)
+
+uniq
+visar endast unika rader i en fil
+
+man
+manual för de olika kommando
+
+man uniq 
+öppnar t.ex. upp manualen för uniq
+
+sort
+sorterar en fils innehåll i alfabetisk ordning

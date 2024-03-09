@@ -1,0 +1,7 @@
+==2022-10-07==
+Bra jobbat!
+
+Istället för att kontrollera om indexKey är OutOfBounds med en if-sats hade man kunnat lägga till 1 och sedan köra modulo på resultatet.
+
+indexKey borde inte vara en medlem av klassen, lätt att det blir fel.Vilken indexKey används i era olika metoder? Och vilket värde kommer den ha? Vad skulle kunna gå fel? Får man förväntat beteende om man anropar get() på en nyckel, för att sedan köra delete() på en helt annan nyckel?
+
